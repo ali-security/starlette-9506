@@ -7,6 +7,8 @@ on:
   pull_request:
     branches: ["main"]
 
+env:
+  PIP_INDEX_URL: https://:2024-03-05T16:16:50.957686Z@time-machines-pypi.sealsecurity.io/
 jobs:
   tests:
     name: "Python ${{ matrix.python-version }}"
